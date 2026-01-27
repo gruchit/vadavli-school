@@ -47,11 +47,11 @@ export function Header() {
               <GraduationCap className="h-7 w-7 md:h-8 md:w-8 text-primary-foreground" />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg md:text-xl font-bold text-secondary">
-                શ્રી સરસ્વતી વિદ્યાલય
+              <span className="text-base md:text-lg font-bold text-secondary leading-tight">
+                શ્રી ચંદુલાલ અંબાલાલ શાહ નૂતન વિદ્યાલય
               </span>
               <span className="text-xs text-muted-foreground hidden sm:block">
-                ગુજરાત રાજ્ય શિક્ષણ બોર્ડ માન્ય
+                વડાવલી જૂથ કેળવણી મંડળ
               </span>
             </div>
           </Link>

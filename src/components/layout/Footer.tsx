@@ -11,9 +11,12 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <div className="hero-gradient p-2 rounded-lg">
-                <GraduationCap className="h-6 w-6 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-bold">શ્રી સરસ્વતી વિદ્યાલય</span>
+              <GraduationCap className="h-6 w-6 text-primary-foreground" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-lg font-bold leading-tight">શ્રી ચંદુલાલ અંબાલાલ શાહ નૂતન વિદ્યાલય</span>
+              <span className="text-xs text-secondary-foreground/70">વડાવલી જૂથ કેળવણી મંડળ</span>
+            </div>
             </div>
             <p className="text-secondary-foreground/80 leading-relaxed">
               ગુજરાત રાજ્ય શિક્ષણ બોર્ડ દ્વારા માન્ય શાળા. અમે વિદ્યાર્થીઓના સર્વાંગી વિકાસ માટે સમર્પિત છીએ.
@@ -108,7 +111,7 @@ export function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-secondary-foreground/10">
         <div className="container py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-secondary-foreground/60">
-          <p>© 2024 શ્રી સરસ્વતી વિદ્યાલય. સર્વાધિકાર સુરક્ષિત.</p>
+          <p>© 2024 શ્રી ચંદુલાલ અંબાલાલ શાહ નૂતન વિદ્યાલય. સર્વાધિકાર સુરક્ષિત.</p>
           <p>
             "સા વિદ્યા યા વિમુક્તયે" - વિદ્યા તે છે જે મુક્તિ આપે
           </p>

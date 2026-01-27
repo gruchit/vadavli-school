@@ -23,8 +23,8 @@ export default function About() {
                 અમારી <span className="text-gradient">વાર્તા</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-                શ્રી સરસ્વતી વિદ્યાલયની સ્થાપના 1999 માં શ્રી રમેશભાઈ પટેલ દ્વારા 
-                કરવામાં આવી હતી. તેમના સ્વપ્ન હતું કે ગ્રામીણ વિસ્તારના બાળકોને 
+                શ્રી ચંદુલાલ અંબાલાલ શાહ નૂતન વિદ્યાલયની સ્થાપના વડાવલી જૂથ કેળવણી મંડળ 
+                દ્વારા કરવામાં આવી હતી. તેમના સ્વપ્ન હતું કે ગ્રામીણ વિસ્તારના બાળકોને 
                 પણ ઉચ્ચ ગુણવત્તાનું શિક્ષણ મળે.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
