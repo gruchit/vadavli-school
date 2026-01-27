@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 export function CTASection() {
-  return (
-    <section className="py-16 md:py-24">
+  return <section className="py-16 md:py-24">
       <div className="container">
         <div className="relative overflow-hidden rounded-3xl navy-gradient pattern-overlay">
-          <div className="relative px-6 py-12 md:px-12 md:py-20 text-center">
+          <div className="relative px-6 py-12 md:px-12 md:py-20 text-center bg-navy-light">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-foreground mb-4">
               તમારા બાળકના ઉજ્જવળ ભવિષ્ય માટે
               <br />
@@ -34,6 +32,5 @@ export function CTASection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
