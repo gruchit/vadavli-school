@@ -18,8 +18,8 @@ export function HeroSection() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            શ્રી સરસ્વતી વિદ્યાલયમાં
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            શ્રી ચંદુલાલ અંબાલાલ શાહ નૂતન વિદ્યાલયમાં
             <br />
             <span className="text-gold">સ્વાગત છે</span>
           </h1>
