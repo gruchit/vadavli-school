@@ -1,11 +1,9 @@
 import { Layout } from "@/components/layout/Layout";
 import { Target, Eye, Heart, Award, Users, BookOpen } from "lucide-react";
-
 export default function About() {
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero Section */}
-      <section className="hero-gradient pattern-overlay py-16 md:py-24">
+      <section className="hero-gradient pattern-overlay py-16 md:py-24 bg-primary">
         <div className="container text-center text-primary-foreground">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">અમારા વિશે</h1>
           <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
@@ -39,11 +37,7 @@ export default function About() {
             </div>
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated">
-                <img
-                  src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80"
-                  alt="શાળા ભવન"
-                  className="w-full h-full object-cover"
-                />
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80" alt="શાળા ભવન" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-6 -left-6 w-32 h-32 hero-gradient rounded-2xl -z-10 hidden md:block" />
             </div>
@@ -97,20 +91,29 @@ export default function About() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { icon: Heart, title: "પ્રેમ", desc: "વિદ્યાર્થીઓ પ્રત્યે અનંત પ્રેમ અને સમર્પણ" },
-              { icon: Award, title: "શ્રેષ્ઠતા", desc: "શિક્ષણમાં ઉત્કૃષ્ટતાની ખોજ" },
-              { icon: Users, title: "સમાનતા", desc: "દરેક વિદ્યાર્થી સમાન અને મહત્વપૂર્ણ" },
-              { icon: BookOpen, title: "જ્ઞાન", desc: "જીવનભર શીખવાની પ્રેરણા" },
-            ].map((value, index) => (
-              <div key={index} className="text-center p-6 rounded-2xl bg-card shadow-card border border-border hover:shadow-elevated transition-all">
+            {[{
+            icon: Heart,
+            title: "પ્રેમ",
+            desc: "વિદ્યાર્થીઓ પ્રત્યે અનંત પ્રેમ અને સમર્પણ"
+          }, {
+            icon: Award,
+            title: "શ્રેષ્ઠતા",
+            desc: "શિક્ષણમાં ઉત્કૃષ્ટતાની ખોજ"
+          }, {
+            icon: Users,
+            title: "સમાનતા",
+            desc: "દરેક વિદ્યાર્થી સમાન અને મહત્વપૂર્ણ"
+          }, {
+            icon: BookOpen,
+            title: "જ્ઞાન",
+            desc: "જીવનભર શીખવાની પ્રેરણા"
+          }].map((value, index) => <div key={index} className="text-center p-6 rounded-2xl bg-card shadow-card border border-border hover:shadow-elevated transition-all">
                 <div className="mx-auto mb-4 inline-flex p-3 rounded-xl hero-gradient shadow-soft">
                   <value.icon className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="text-lg font-bold text-foreground mb-2">{value.title}</h3>
                 <p className="text-sm text-muted-foreground">{value.desc}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -125,20 +128,24 @@ export default function About() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { value: "95%+", label: "બોર્ડ પરિણામ" },
-              { value: "500+", label: "મેરિટ વિદ્યાર્થીઓ" },
-              { value: "50+", label: "રાજ્ય પુરસ્કારો" },
-              { value: "100%", label: "વાલી સંતોષ" },
-            ].map((stat, index) => (
-              <div key={index} className="text-center p-8 rounded-2xl bg-secondary-foreground/10 backdrop-blur-sm border border-secondary-foreground/20">
+            {[{
+            value: "95%+",
+            label: "બોર્ડ પરિણામ"
+          }, {
+            value: "500+",
+            label: "મેરિટ વિદ્યાર્થીઓ"
+          }, {
+            value: "50+",
+            label: "રાજ્ય પુરસ્કારો"
+          }, {
+            value: "100%",
+            label: "વાલી સંતોષ"
+          }].map((stat, index) => <div key={index} className="text-center p-8 rounded-2xl bg-secondary-foreground/10 backdrop-blur-sm border border-secondary-foreground/20">
                 <div className="text-4xl md:text-5xl font-bold text-gold mb-2">{stat.value}</div>
                 <div className="text-secondary-foreground/80">{stat.label}</div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 }
