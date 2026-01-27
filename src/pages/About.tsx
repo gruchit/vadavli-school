@@ -119,7 +119,7 @@ export default function About() {
       </section>
 
       {/* Achievements */}
-      <section className="py-16 md:py-24 navy-gradient pattern-overlay">
+      <section className="py-16 md:py-24 navy-gradient pattern-overlay bg-muted-foreground">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary-foreground mb-4">
