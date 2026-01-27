@@ -5,30 +5,34 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-
 export default function Contact() {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     subject: "",
-    message: "",
+    message: ""
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "સંદેશો મોકલાયો!",
-      description: "અમે ટૂંક સમયમાં તમારો સંપર્ક કરીશું.",
+      description: "અમે ટૂંક સમયમાં તમારો સંપર્ક કરીશું."
     });
-    setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: ""
+    });
   };
-
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero Section */}
-      <section className="hero-gradient pattern-overlay py-16 md:py-24">
+      <section className="hero-gradient pattern-overlay py-16 md:py-24 bg-primary">
         <div className="container text-center text-primary-foreground">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">સંપર્ક કરો</h1>
           <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
@@ -113,16 +117,9 @@ export default function Contact() {
 
               {/* Map */}
               <div className="rounded-2xl overflow-hidden shadow-card border border-border h-64">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.7076599454684!2d72.57136!3d23.0225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAxJzIxLjAiTiA3MsKwMzQnMTcuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="શાળાનું સ્થાન"
-                />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.7076599454684!2d72.57136!3d23.0225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAxJzIxLjAiTiA3MsKwMzQnMTcuMCJF!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="100%" style={{
+                border: 0
+              }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="શાળાનું સ્થાન" />
               </div>
             </div>
 
@@ -138,26 +135,19 @@ export default function Contact() {
                     <label className="block text-sm font-medium text-foreground mb-2">
                       તમારું નામ *
                     </label>
-                    <Input
-                      required
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="નામ દાખલ કરો"
-                      className="bg-background"
-                    />
+                    <Input required value={formData.name} onChange={e => setFormData({
+                    ...formData,
+                    name: e.target.value
+                  })} placeholder="નામ દાખલ કરો" className="bg-background" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
                       ઇમેઇલ *
                     </label>
-                    <Input
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      placeholder="email@example.com"
-                      className="bg-background"
-                    />
+                    <Input type="email" required value={formData.email} onChange={e => setFormData({
+                    ...formData,
+                    email: e.target.value
+                  })} placeholder="email@example.com" className="bg-background" />
                   </div>
                 </div>
 
@@ -166,25 +156,19 @@ export default function Contact() {
                     <label className="block text-sm font-medium text-foreground mb-2">
                       મોબાઇલ નંબર
                     </label>
-                    <Input
-                      type="tel"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="+91 98765 43210"
-                      className="bg-background"
-                    />
+                    <Input type="tel" value={formData.phone} onChange={e => setFormData({
+                    ...formData,
+                    phone: e.target.value
+                  })} placeholder="+91 98765 43210" className="bg-background" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
                       વિષય *
                     </label>
-                    <Input
-                      required
-                      value={formData.subject}
-                      onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                      placeholder="વિષય દાખલ કરો"
-                      className="bg-background"
-                    />
+                    <Input required value={formData.subject} onChange={e => setFormData({
+                    ...formData,
+                    subject: e.target.value
+                  })} placeholder="વિષય દાખલ કરો" className="bg-background" />
                   </div>
                 </div>
 
@@ -192,14 +176,10 @@ export default function Contact() {
                   <label className="block text-sm font-medium text-foreground mb-2">
                     સંદેશો *
                   </label>
-                  <Textarea
-                    required
-                    rows={5}
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="તમારો સંદેશો અહીં લખો..."
-                    className="bg-background resize-none"
-                  />
+                  <Textarea required rows={5} value={formData.message} onChange={e => setFormData({
+                  ...formData,
+                  message: e.target.value
+                })} placeholder="તમારો સંદેશો અહીં લખો..." className="bg-background resize-none" />
                 </div>
 
                 <Button type="submit" size="lg" className="w-full">
@@ -211,6 +191,5 @@ export default function Contact() {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 }
