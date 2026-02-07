@@ -61,7 +61,7 @@ export function HeroSection() {
           label: "વિદ્યાર્થીઓ"
         }, {
           icon: BookOpen,
-          value: "50+",
+          value: "10+",
           label: "અનુભવી શિક્ષકો"
         }, {
           icon: Award,
