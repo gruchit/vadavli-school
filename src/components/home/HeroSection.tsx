@@ -57,7 +57,7 @@ export function HeroSection() {
       }}>
           {[{
           icon: Users,
-          value: "300",
+          value: "300+",
           label: "વિદ્યાર્થીઓ"
         }, {
           icon: BookOpen,
