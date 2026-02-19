@@ -19,7 +19,7 @@ const teachers = [{
   qualification: "M.Sc., M.Ed.",
   image: one
 }, {
-  name: "શ્વિનોદભાઈ એન. પરમાર",
+  name: "વિનોદભાઈ એન. પરમાર",
   role: "મ.શિ. (મા.વિ)",
   subject: "હિન્દી, કૃષિ",
   // experience: "25 વર્ષ",
