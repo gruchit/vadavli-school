@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { Target, Eye, Heart, Award, Users, BookOpen } from "lucide-react";
+import schoolImg from "@/images/gallery/IMG-20250815-WA0054.jpg";
 export default function About() {
   return <Layout>
       {/* Hero Section */}
@@ -37,7 +38,7 @@ export default function About() {
             </div>
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated">
-                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80" alt="શાળા ભવન" className="w-full h-full object-cover" />
+                <img src={schoolImg} alt="શાળા ભવન" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-6 -left-6 w-32 h-32 hero-gradient rounded-2xl -z-10 hidden md:block" />
             </div>
