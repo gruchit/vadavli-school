@@ -12,7 +12,7 @@ const steps = [{
 }, {
   step: 3,
   title: "પ્રવેશ પરીક્ષા",
-  description: "ધોરણ 2 થી ઉપર માટે સાદી પ્રવેશ પરીક્ષા (ગુજરાતી, ગણિત)."
+  description: "ધોરણ 9 થી ઉપર માટે સાદી પ્રવેશ પરીક્ષા (ગુજરાતી, ગણિત)."
 }, {
   step: 4,
   title: "વાલી મુલાકાત",
@@ -22,28 +22,43 @@ const steps = [{
   title: "ફી ભરો",
   description: "પ્રવેશ મંજૂર થયા બાદ ફી ભરો અને પ્રવેશ પ્રક્રિયા પૂર્ણ કરો."
 }];
-const documents = ["જન્મ પ્રમાણપત્ર (મૂળ અને નકલ)", "અગાઉની શાળાનું TC (ટ્રાન્સફર સર્ટિફિકેટ)", "છેલ્લા વર્ષનું પરિણામ પત્રક", "જાતિ પ્રમાણપત્ર (જો લાગુ હોય)", "આધાર કાર્ડની નકલ", "પાસપોર્ટ સાઇઝ ફોટો (4 નંગ)", "વાલીનું ઓળખ પ્રમાણ"];
+const documents = ["જન્મ પ્રમાણપત્ર (મૂળ અને નકલ)", "અગાઉની શાળાનું અસલ LC (લિવિંગ સર્ટિફિકેટ)", "છેલ્લા વર્ષનું પરિણામ પત્રક", "જાતિ પ્રમાણપત્ર (જો લાગુ હોય)", "આધાર કાર્ડની નકલ", "પાસપોર્ટ સાઇઝ ફોટો (4 નંગ)", "વાલીનું ઓળખ પ્રમાણ"];
 const fees = [{
-  grade: "ધોરણ 1 થી 5",
-  annual: "₹12,000",
-  admission: "₹2,000"
+  grade: "ધોરણ 9",
+  annual: "₹15",
+  three: "₹50",
+  four: "₹25",
+  five: "-",
+  admission: "₹90"
 }, {
-  grade: "ધોરણ 6 થી 8",
-  annual: "₹15,000",
-  admission: "₹2,500"
+  grade: "ધોરણ 10",
+  annual: "-",
+  three: "₹50",
+  four: "-",
+  five: "-",
+  admission: "₹50"
 }, {
-  grade: "ધોરણ 9 થી 10",
-  annual: "₹18,000",
-  admission: "₹3,000"
-}, {
-  grade: "ધોરણ 11 થી 12 (વિજ્ઞાન)",
-  annual: "₹22,000",
-  admission: "₹4,000"
-}, {
-  grade: "ધોરણ 11 થી 12 (સામાન્ય)",
-  annual: "₹18,000",
-  admission: "₹3,000"
-}];
+  grade: "ધોરણ 11",
+  annual: "₹20",
+  three: "₹100",
+  four: "₹10",
+  five: "₹100",
+  admission: "₹230"
+},
+//  {
+//   grade: "ધોરણ 11 થી 12 (વિજ્ઞાન)",
+//   annual: "₹22,000",
+//   admission: "₹4,000"
+// }, 
+{
+  grade: "ધોરણ 12",
+  annual: "-",
+  three: "₹100",
+  four: "₹300",
+  five: "₹100",
+  admission: "₹500"
+}
+];
 export default function Admissions() {
   return <Layout>
       {/* Hero Section */}
@@ -55,7 +70,7 @@ export default function Admissions() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">પ્રવેશ પ્રક્રિયા</h1>
           <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
-            શૈક્ષણિક વર્ષ 2024-25 માટે પ્રવેશ ફોર્મ ઉપલબ્ધ
+            શૈક્ષણિક વર્ષ 2026-27 માટે પ્રવેશ ફોર્મ ઉપલબ્ધ
           </p>
         </div>
       </section>
@@ -129,22 +144,22 @@ export default function Admissions() {
               <div className="space-y-4">
                 {[{
                 event: "ફોર્મ વિતરણ શરૂ",
-                date: "1 માર્ચ 2024"
+                date: "1 એપ્રિલ 2026"
               }, {
                 event: "ફોર્મ જમા કરાવવાની છેલ્લી તારીખ",
-                date: "30 એપ્રિલ 2024"
+                date: "5 મે 2026"
               }, {
                 event: "પ્રવેશ પરીક્ષા",
-                date: "5-10 મે 2024"
+                date: "1 થી 10 જૂન 2026"
               }, {
                 event: "પરિણામ જાહેરાત",
-                date: "15 મે 2024"
+                date: "**"
               }, {
                 event: "પ્રવેશ પ્રક્રિયા પૂર્ણ",
-                date: "31 મે 2024"
+                date: "**"
               }, {
                 event: "નવું શૈક્ષણિક સત્ર શરૂ",
-                date: "15 જૂન 2024"
+                date: "**"
               }].map((item, index) => <div key={index} className="flex items-center justify-between p-4 rounded-xl bg-card shadow-soft border border-border">
                     <span className="text-foreground font-medium">{item.event}</span>
                     <span className="px-3 py-1 rounded-lg bg-primary/10 text-primary text-sm font-medium">
@@ -174,14 +189,20 @@ export default function Admissions() {
               <thead>
                 <tr className="hero-gradient text-primary-foreground">
                   <th className="p-4 text-left rounded-tl-xl">ધોરણ</th>
-                  <th className="p-4 text-center">વાર્ષિક ફી</th>
-                  <th className="p-4 text-center rounded-tr-xl">પ્રવેશ ફી</th>
+                  <th className="p-4 text-center">એનરોલમેન્ટ ફી</th>
+                  <th className="p-4 text-center">સત્ર ફી</th>
+                  <th className="p-4 text-center">શિક્ષણ ફી (દાખલ ફી)</th>
+                  <th className="p-4 text-center">ઉદ્યોગ ફી</th>
+                  <th className="p-4 text-center rounded-tr-xl">કુલ</th>
                 </tr>
               </thead>
               <tbody>
                 {fees.map((fee, index) => <tr key={index} className={`border-b border-border ${index % 2 === 0 ? "bg-card" : "bg-muted/50"}`}>
                     <td className="p-4 font-medium text-foreground">{fee.grade}</td>
                     <td className="p-4 text-center text-foreground">{fee.annual}</td>
+                    <td className="p-4 text-center text-foreground">{fee.three}</td>
+                    <td className="p-4 text-center text-foreground">{fee.four}</td>
+                    <td className="p-4 text-center text-foreground">{fee.five}</td>
                     <td className="p-4 text-center text-foreground">{fee.admission}</td>
                   </tr>)}
               </tbody>
@@ -205,9 +226,9 @@ export default function Admissions() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button size="lg" variant="hero" asChild>
-              <a href="tel:+919876543210">
+              <a href="tel:+917600774195">
                 <Phone className="mr-2 h-5 w-5" />
-                +91 98765 43210
+                +91 76007 74195
               </a>
             </Button>
             <Button size="lg" variant="heroOutline">

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { GraduationCap, MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube } from "lucide-react";
+import { GraduationCap, MapPin, Phone,  HardDrive, Mail, Clock, Facebook, Instagram, Youtube } from "lucide-react";
 
 export function Footer() {
   return (
@@ -15,20 +15,17 @@ export function Footer() {
             </div>
             <div className="flex flex-col">
               <span className="text-lg font-bold leading-tight">શ્રી ચંદુલાલ અંબાલાલ શાહ નૂતન વિદ્યાલય</span>
-              <span className="text-xs text-secondary-foreground/70">વડાવલી જૂથ કેળવણી મંડળ</span>
+              <span className="text-xs text-secondary-foreground/70">વડાવલી જૂથ કેળવણી મંડળ સંચાલિત</span>
             </div>
             </div>
             <p className="text-secondary-foreground/80 leading-relaxed">
               ગુજરાત રાજ્ય શિક્ષણ બોર્ડ દ્વારા માન્ય શાળા. અમે વિદ્યાર્થીઓના સર્વાંગી વિકાસ માટે સમર્પિત છીએ.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="p-2 rounded-lg bg-secondary-foreground/10 hover:bg-primary hover:text-primary-foreground transition-all">
-                <Facebook className="h-5 w-5" />
+              <a href="https://drive.google.com/file/d/1XC1CJz89aHtrGKLLSQdF8GjNdoheTaKf/view?usp=drivesdk" target="_blank" className="p-2 rounded-lg bg-secondary-foreground/10 hover:bg-primary hover:text-primary-foreground transition-all">
+                <HardDrive className="h-5 w-5" />
               </a>
-              <a href="#" className="p-2 rounded-lg bg-secondary-foreground/10 hover:bg-primary hover:text-primary-foreground transition-all">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="p-2 rounded-lg bg-secondary-foreground/10 hover:bg-primary hover:text-primary-foreground transition-all">
+              <a href="https://youtu.be/PbmEKj3QHc8?si=i304OgdNfZmIRkUU" target="_blank" className="p-2 rounded-lg bg-secondary-foreground/10 hover:bg-primary hover:text-primary-foreground transition-all">
                 <Youtube className="h-5 w-5" />
               </a>
             </div>
@@ -36,27 +33,28 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-gold">ઝડપી લિંક્સ</h3>
-            <ul className="space-y-2">
-              {[
-                { href: "/about", label: "અમારા વિશે" },
-                { href: "/academics", label: "શૈક્ષણિક" },
-                { href: "/admissions", label: "પ્રવેશ પ્રક્રિયા" },
-                { href: "/faculty", label: "શિક્ષકગણ" },
-                { href: "/gallery", label: "ફોટો ગેલેરી" },
-                { href: "/contact", label: "સંપર્ક કરો" },
-              ].map((link) => (
-                <li key={link.href}>
-                  <Link 
-                    to={link.href}
-                    className="text-secondary-foreground/80 hover:text-gold transition-colors flex items-center gap-2"
-                  >
-                    <span className="h-1 w-1 rounded-full bg-primary" />
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <h3 className="text-lg font-bold mb-4 text-gold">ડોનેશન માટે</h3>
+            <div className="space-y-2 text-secondary-foreground/80">
+              <p className="flex items-center gap-2" style={{ alignItems: "baseline" }}>
+                <span className="h-1 w-1 rounded-full bg-primary"/>
+                    એકાઉન્ટ નું નામ : <br></br>VADAVALI JUTH KELVANI MANDAL
+              </p>
+              
+              <p className="flex items-center gap-2">
+                <span className="h-1 w-1 rounded-full bg-primary" />
+                    એકાઉન્ટ નં. : 10651443721
+              </p>
+
+              <p className="flex items-center gap-2">
+                <span className="h-1 w-1 rounded-full bg-primary" />
+                  બ્રાન્ચ કોડ : SBIN0005528
+              </p>
+
+              <p className="flex items-center gap-2">
+                <span className="h-1 w-1 rounded-full bg-primary" />
+                બ્રાન્ચ : VADAVALI SAB
+              </p>
+            </div>
           </div>
 
           {/* Contact Info */}
@@ -66,20 +64,19 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-secondary-foreground/80">
-                  શાળા માર્ગ, મુખ્ય બજાર પાસે,<br />
-                  અમદાવાદ - 380001, ગુજરાત
+                  મુ. પો. વડાવલી બસ સ્ટેન્ડ થી મુખ્ય ગેટમાં પ્રવેશતા ડાબી બાજુ.<br />
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
                 <a href="tel:+919876543210" className="text-secondary-foreground/80 hover:text-gold transition-colors">
-                  +91 98765 43210
+                  +91 76007 74195
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <a href="mailto:info@vidhyalaya.edu" className="text-secondary-foreground/80 hover:text-gold transition-colors">
-                  info@vidhyalaya.edu
+                <a href="mailto:canutanvidhyalay@gmail.com" className="text-secondary-foreground/80 hover:text-gold transition-colors">
+                  canutanvidhyalay@gmail.com
                 </a>
               </li>
             </ul>
@@ -92,15 +89,15 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Clock className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <div className="text-secondary-foreground/80">
-                  <p className="font-medium">સોમવાર - શનિવાર</p>
-                  <p>સવારે 7:30 - બપોરે 1:30</p>
+                  <p className="font-medium">સોમવાર થી શુક્રવાર :</p>
+                  <p>સવારે 10:40 થી બપોરે 4:45</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <div className="text-secondary-foreground/80">
-                  <p className="font-medium">કાર્યાલય સમય</p>
-                  <p>સવારે 9:00 - સાંજે 5:00</p>
+                  <p className="font-medium">શનિવાર :</p>
+                  <p>સવારે 7:15 થી સવારે 11:35</p>
                 </div>
               </li>
             </ul>

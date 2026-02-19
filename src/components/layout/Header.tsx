@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 const navLinks = [
   { href: "/", label: "હોમ" },
   { href: "/about", label: "અમારા વિશે" },
+  { href: "/about2", label: "દાતાઓ" },
   { href: "/academics", label: "શૈક્ષણિક" },
   { href: "/faculty", label: "શિક્ષકગણ" },
   { href: "/admissions", label: "પ્રવેશ" },
@@ -23,13 +24,13 @@ export function Header() {
       <div className="navy-gradient text-secondary-foreground py-2">
         <div className="container flex flex-col sm:flex-row items-center justify-between gap-2 text-sm">
           <div className="flex items-center gap-4">
-            <a href="tel:+919876543210" className="flex items-center gap-1.5 hover:text-gold transition-colors">
+            <a href="tel:+917600774195" className="flex items-center gap-1.5 hover:text-gold transition-colors">
               <Phone className="h-3.5 w-3.5" />
-              <span>+91 98765 43210</span>
+              <span>+91 76007 74195</span>
             </a>
-            <a href="mailto:info@school.edu" className="flex items-center gap-1.5 hover:text-gold transition-colors">
+            <a href="mailto:canutanvidhyalay@gmail.com" className="flex items-center gap-1.5 hover:text-gold transition-colors">
               <Mail className="h-3.5 w-3.5" />
-              <span>info@vidhyalaya.edu</span>
+              <span>canutanvidhyalay@gmail.com</span>
             </a>
           </div>
           <div className="text-gold font-medium">
@@ -51,7 +52,7 @@ export function Header() {
                 શ્રી ચંદુલાલ અંબાલાલ શાહ નૂતન વિદ્યાલય
               </span>
               <span className="text-xs text-muted-foreground hidden sm:block">
-                વડાવલી જૂથ કેળવણી મંડળ
+                વડાવલી જૂથ કેળવણી મંડળ સંચાલિત
               </span>
             </div>
           </Link>

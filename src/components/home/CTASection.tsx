@@ -12,7 +12,7 @@ export function CTASection() {
               <span className="text-gold">અમારી સાથે જોડાઓ</span>
             </h2>
             <p className="text-lg text-secondary-foreground/80 max-w-2xl mx-auto mb-8">
-              હવે પ્રવેશ ચાલુ છે! ધોરણ 1 થી 12 માટે પ્રવેશ ફોર્મ ઉપલબ્ધ છે.
+              હવે પ્રવેશ ચાલુ છે! ધોરણ 9 થી 12 માટે પ્રવેશ ફોર્મ ઉપલબ્ધ છે.
               વધુ માહિતી માટે આજે જ સંપર્ક કરો.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

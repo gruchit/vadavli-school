@@ -61,11 +61,11 @@ export function HeroSection() {
           label: "વિદ્યાર્થીઓ"
         }, {
           icon: BookOpen,
-          value: "20+",
+          value: "10+",
           label: "અનુભવી શિક્ષકો"
         }, {
           icon: Award,
-          value: "10+",
+          value: "15+",
           label: "વર્ષનો અનુભવ"
         }].map((stat, index) => <div key={index} className="flex items-center justify-center gap-4 p-6 rounded-xl bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20">
               <stat.icon className="h-10 w-10 text-gold" />

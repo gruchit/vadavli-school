@@ -1,47 +1,55 @@
 import { Layout } from "@/components/layout/Layout";
 import { BookOpen, GraduationCap, FlaskConical, Calculator, Globe, Palette } from "lucide-react";
-const classes = [{
-  level: "પ્રાથમિક શિક્ષણ",
-  grades: "ધોરણ 1 થી 5",
-  description: "મૂળભૂત શિક્ષણનો મજબૂત પાયો. ભાષા, ગણિત, વિજ્ઞાન અને સામાજિક વિજ્ઞાનની મૂળભૂત સમજ.",
-  subjects: ["ગુજરાતી", "હિન્દી", "અંગ્રેજી", "ગણિત", "પર્યાવરણ", "ચિત્રકામ"]
-}, {
+const classes = [
+//   {
+//   level: "પ્રાથમિક શિક્ષણ",
+//   grades: "ધોરણ 1 થી 5",
+//   description: "મૂળભૂત શિક્ષણનો મજબૂત પાયો. ભાષા, ગણિત, વિજ્ઞાન અને સામાજિક વિજ્ઞાનની મૂળભૂત સમજ.",
+//   subjects: ["ગુજરાતી", "હિન્દી", "અંગ્રેજી", "ગણિત", "પર્યાવરણ", "ચિત્રકામ"]
+// }, 
+{
   level: "માધ્યમિક શિક્ષણ",
-  grades: "ધોરણ 6 થી 8",
+  grades: "ધોરણ 9 થી 10",
   description: "વિષયોની ઊંડી સમજ અને વિશ્લેષણાત્મક કૌશલ્યોનો વિકાસ.",
   subjects: ["ગુજરાતી", "હિન્દી", "અંગ્રેજી", "ગણિત", "વિજ્ઞાન", "સામાજિક વિજ્ઞાન", "સંસ્કૃત"]
-}, {
-  level: "ઉચ્ચ માધ્યમિક (વિજ્ઞાન)",
-  grades: "ધોરણ 9 થી 12",
-  description: "ભૌતિક, રસાયણ, જીવ વિજ્ઞાન અને ગણિત સાથે IIT-JEE અને NEET તૈયારી.",
-  subjects: ["ભૌતિક વિજ્ઞાન", "રસાયણ વિજ્ઞાન", "જીવ વિજ્ઞાન/ગણિત", "અંગ્રેજી", "ગુજરાતી"]
-}, {
+}, 
+// {
+//   level: "ઉચ્ચ માધ્યમિક (વિજ્ઞાન)",
+//   grades: "ધોરણ 9 થી 12",
+//   description: "ભૌતિક, રસાયણ, જીવ વિજ્ઞાન અને ગણિત સાથે IIT-JEE અને NEET તૈયારી.",
+//   subjects: ["ભૌતિક વિજ્ઞાન", "રસાયણ વિજ્ઞાન", "જીવ વિજ્ઞાન/ગણિત", "અંગ્રેજી", "ગુજરાતી"]
+// }, 
+{
   level: "ઉચ્ચ માધ્યમિક (સામાન્ય)",
-  grades: "ધોરણ 9 થી 12",
-  description: "વાણિજ્ય અને માનવિકી વિષયો સાથે ઉચ્ચ શિક્ષણ માટે તૈયારી.",
-  subjects: ["અર્થશાસ્ત્ર", "વાણિજ્ય", "ઇતિહાસ", "ભૂગોળ", "સમાજશાસ્ત્ર", "અંગ્રેજી"]
+  grades: "ધોરણ 11 થી 12",
+  description: "વિનિયન પ્રવાહના વિષયો સાથે ઉચ્ચ શિક્ષણ માટે તૈયારી.",
+  subjects: ["અર્થશાસ્ત્ર", "મનોવિજ્ઞાન", "ગુજરાતી", "ભૂગોળ", "સમાજશાસ્ત્ર", "અંગ્રેજી","સંસ્કૃત"]
 }];
 const facilities = [{
   icon: FlaskConical,
   title: "વિજ્ઞાન પ્રયોગશાળા",
-  description: "ભૌતિક, રસાયણ અને જીવ વિજ્ઞાન માટે સંપૂર્ણ સજ્જ પ્રયોગશાળાઓ"
-}, {
-  icon: Calculator,
-  title: "ગણિત લેબ",
-  description: "ગણિતના મૂળભૂત સિદ્ધાંતો સમજવા માટે મોડેલ્સ અને સાધનો"
-}, {
+  description: "ગણિત અને વિજ્ઞાન તથા ટચનોલોજી વિષયો માટે સંપૂર્ણ સજ્જ પ્રયોગશાળાઓ"
+}, 
+// {
+//   icon: Calculator,
+//   title: "ગણિત લેબ",
+//   description: "ગણિતના મૂળભૂત સિદ્ધાંતો સમજવા માટે મોડેલ્સ અને સાધનો"
+// }, 
+{
   icon: Globe,
   title: "કમ્પ્યુટર લેબ",
   description: "આધુનિક કમ્પ્યુટર્સ અને ઇન્ટરનેટ સુવિધા સાથે IT શિક્ષણ"
 }, {
   icon: BookOpen,
   title: "લાઇબ્રેરી",
-  description: "10,000+ પુસ્તકો, સામયિકો અને ડિજિટલ સંસાધનો"
-}, {
-  icon: Palette,
-  title: "કલા વિભાગ",
-  description: "સંગીત, નૃત્ય, ચિત્રકામ અને હસ્તકલા માટે સમર્પિત ખંડો"
-}, {
+  description: "5,000+ પુસ્તકો, સામયિકો અને ડિજિટલ સંસાધનો"
+}, 
+// {
+//   icon: Palette,
+//   title: "કલા વિભાગ",
+//   description: "સંગીત, નૃત્ય, ચિત્રકામ અને હસ્તકલા માટે સમર્પિત ખંડો"
+// }, 
+{
   icon: GraduationCap,
   title: "સ્માર્ટ ક્લાસરૂમ",
   description: "ડિજિટલ બોર્ડ અને ઇન્ટરેક્ટિવ શિક્ષણ સાધનો"
@@ -66,7 +74,7 @@ export default function Academics() {
               અમારા <span className="text-gradient">અભ્યાસક્રમો</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              ધોરણ 1 થી 12 સુધીનું સંપૂર્ણ શિક્ષણ
+              ધોરણ 9 થી 12 સુધીનું સંપૂર્ણ શિક્ષણ
             </p>
           </div>
 
@@ -106,7 +114,7 @@ export default function Academics() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6">
             {facilities.map((facility, index) => <div key={index} className="p-6 rounded-2xl bg-card shadow-card border border-border hover:shadow-elevated transition-all">
                 <div className="mb-4 inline-flex p-3 rounded-xl hero-gradient shadow-soft">
                   <facility.icon className="h-6 w-6 text-primary-foreground" />
@@ -128,27 +136,106 @@ export default function Academics() {
               </h2>
             </div>
 
+            <div className="text-center mb-6">
+              <h4 className="text-1.5xl md:text-2xl font-bold text-foreground mb-4">
+                સોમવાર થી શુક્રવાર
+              </h4>
+            </div>
+
             <div className="p-6 md:p-8 rounded-2xl bg-card shadow-card border border-border">
               <div className="grid gap-4">
                 <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
-                  <span className="font-medium text-foreground">પ્રાર્થના સભા</span>
-                  <span className="text-muted-foreground">7:30 - 7:45</span>
+                  <span className="font-medium text-foreground">પ્રાર્થના</span>
+                  <span className="text-muted-foreground">10:40 થી 10:55 </span>
                 </div>
                 <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
-                  <span className="font-medium text-foreground">પહેલું સત્ર</span>
-                  <span className="text-muted-foreground">7:45 - 10:30</span>
+                  <span className="font-medium text-foreground">1</span>
+                  <span className="text-muted-foreground">10:55 થી 11:35</span>
                 </div>
                 <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
-                  <span className="font-medium text-foreground">નાસ્તો વિરામ</span>
-                  <span className="text-muted-foreground">10:30 - 11:00</span>
+                  <span className="font-medium text-foreground">2</span>
+                  <span className="text-muted-foreground">11:35 થી 12:15</span>
                 </div>
                 <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
-                  <span className="font-medium text-foreground">બીજું સત્ર</span>
-                  <span className="text-muted-foreground">11:00 - 1:30</span>
+                  <span className="font-medium text-foreground">પ્રથમ મોટી રિસેસ</span>
+                  <span className="text-muted-foreground">12:15 થી 12:50</span>
                 </div>
                 <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
-                  <span className="font-medium text-foreground">વધારાના વર્ગો (વૈકલ્પિક)</span>
-                  <span className="text-muted-foreground">2:00 - 4:00</span>
+                  <span className="font-medium text-foreground">3</span>
+                  <span className="text-muted-foreground">12:50 થી 1:25</span>
+                </div>
+                <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
+                  <span className="font-medium text-foreground">4</span>
+                  <span className="text-muted-foreground">1:25 થી 2:00</span>
+                </div>
+                <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
+                  <span className="font-medium text-foreground">બીજી નાની રિસેસ</span>
+                  <span className="text-muted-foreground">2:00 થી 2:10</span>
+                </div>
+                <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
+                  <span className="font-medium text-foreground">5</span>
+                  <span className="text-muted-foreground">2:10 થી 2:45</span>
+                </div>
+                <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
+                  <span className="font-medium text-foreground">6</span>
+                  <span className="text-muted-foreground">2:45 થી 3:20</span>
+                </div>
+                <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
+                  <span className="font-medium text-foreground">ત્રીજી નાની રિસેસ</span>
+                  <span className="text-muted-foreground">3:20 થી 3:35</span>
+                </div>
+                <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
+                  <span className="font-medium text-foreground">7</span>
+                  <span className="text-muted-foreground">3:35 થી 4:10</span>
+                </div>
+                <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
+                  <span className="font-medium text-foreground">8</span>
+                  <span className="text-muted-foreground">4:10 થી 4:45</span>
+                </div>
+              </div>
+            </div>
+            <br/><br/>
+
+            
+            <div className="text-center mb-12">
+              <h4 className="text-1.5xl md:text-2xl font-bold text-foreground mb-4">
+                શનિવાર
+              </h4>
+            </div>
+
+            <div className="p-6 md:p-8 rounded-2xl bg-card shadow-card border border-border">
+              <div className="grid gap-4">
+                <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
+                  <span className="font-medium text-foreground">પ્રાર્થના</span>
+                  <span className="text-muted-foreground">7:15 થી 7:30</span>
+                </div>
+                <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
+                  <span className="font-medium text-foreground">1</span>
+                  <span className="text-muted-foreground">7:30 થી 8:10</span>
+                </div>
+                <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
+                  <span className="font-medium text-foreground">2</span>
+                  <span className="text-muted-foreground">8:10 થી 8:50</span>
+                </div>
+                <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
+                  <span className="font-medium text-foreground">3</span>
+                  <span className="text-muted-foreground">8:50 થી 9:30</span>
+                </div>
+                <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
+                  <span className="font-medium text-foreground">રિસેસ</span>
+                  <span className="text-muted-foreground">9:30 થી 9:45</span>
+                </div>
+                <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
+                  <span className="font-medium text-foreground">4</span>
+                  <span className="text-muted-foreground">9:45 થી 10:25</span>
+                </div>
+                <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
+                  <span className="font-medium text-foreground">5</span>
+                  <span className="text-muted-foreground">10:25 થી 11:00</span>
+                </div>
+                <div className="flex items-center justify-between p-4 rounded-lg bg-muted">
+                  <span className="font-medium text-foreground">6</span>
+                  <span className="text-muted-foreground">11:00 થી 11:35</span>
                 </div>
               </div>
             </div>

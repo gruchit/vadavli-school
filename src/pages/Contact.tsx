@@ -59,8 +59,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold text-foreground mb-1">સરનામું</h3>
                     <p className="text-muted-foreground">
-                      શાળા માર્ગ, મુખ્ય બજાર પાસે,<br />
-                      અમદાવાદ - 380001, ગુજરાત
+                      મુ. પો. વડાવલી બસ સ્ટેન્ડ થી મુખ્ય ગેટમાં પ્રવેશતા ડાબી બાજુ.<br />
                     </p>
                   </div>
                 </div>
@@ -72,13 +71,13 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold text-foreground mb-1">ફોન</h3>
                     <p className="text-muted-foreground">
-                      <a href="tel:+919876543210" className="hover:text-primary transition-colors">
-                        +91 98765 43210
+                      <a href="tel:+917600774195" className="hover:text-primary transition-colors">
+                        +91 76007 74195
                       </a>
-                      <br />
-                      <a href="tel:+917812345678" className="hover:text-primary transition-colors">
+                      {/* <br /> */}
+                      {/* <a href="tel:+917812345678" className="hover:text-primary transition-colors">
                         +91 78123 45678
-                      </a>
+                      </a> */}
                     </p>
                   </div>
                 </div>
@@ -90,13 +89,13 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold text-foreground mb-1">ઇમેઇલ</h3>
                     <p className="text-muted-foreground">
-                      <a href="mailto:info@vidhyalaya.edu" className="hover:text-primary transition-colors">
-                        info@vidhyalaya.edu
+                      <a href="mailto:canutanvidhyalay@gmail.com" className="hover:text-primary transition-colors">
+                        canutanvidhyalay@gmail.com
                       </a>
-                      <br />
-                      <a href="mailto:admissions@vidhyalaya.edu" className="hover:text-primary transition-colors">
-                        admissions@vidhyalaya.edu
-                      </a>
+                      {/* <br />
+                      <a href="mailto:canutanvidhyalay@gmail.com" className="hover:text-primary transition-colors">
+                        canutanvidhyalay@gmail.com
+                      </a> */}
                     </p>
                   </div>
                 </div>
@@ -108,19 +107,19 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold text-foreground mb-1">કાર્યાલય સમય</h3>
                     <p className="text-muted-foreground">
-                      સોમવાર - શનિવાર: સવારે 9:00 - સાંજે 5:00<br />
-                      રવિવાર: બંધ
+                      સોમવાર થી શુક્રવાર : સવારે 10:40 થી બપોરે 4:45<br />
+                      શનિવાર : સવારે 7:15 થી સવારે 11:35
                     </p>
                   </div>
                 </div>
               </div>
 
               {/* Map */}
-              <div className="rounded-2xl overflow-hidden shadow-card border border-border h-64">
+              {/* <div className="rounded-2xl overflow-hidden shadow-card border border-border h-64">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.7076599454684!2d72.57136!3d23.0225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAxJzIxLjAiTiA3MsKwMzQnMTcuMCJF!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="100%" style={{
                 border: 0
               }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="શાળાનું સ્થાન" />
-              </div>
+              </div> */}
             </div>
 
             {/* Contact Form */}
@@ -159,7 +158,7 @@ export default function Contact() {
                     <Input type="tel" value={formData.phone} onChange={e => setFormData({
                     ...formData,
                     phone: e.target.value
-                  })} placeholder="+91 98765 43210" className="bg-background" />
+                  })} placeholder="+91 76007 74195" className="bg-background" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">

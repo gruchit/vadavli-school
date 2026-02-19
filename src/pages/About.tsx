@@ -7,7 +7,7 @@ export default function About() {
         <div className="container text-center text-primary-foreground">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">અમારા વિશે</h1>
           <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
-            25 વર્ષથી ગુણવત્તાયુક્ત શિક્ષણની પરંપરા
+            65 વર્ષથી ગુણવત્તાયુક્ત શિક્ષણની પરંપરા
           </p>
         </div>
       </section>
@@ -22,15 +22,15 @@ export default function About() {
               </h2>
               <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
                 શ્રી ચંદુલાલ અંબાલાલ શાહ નૂતન વિદ્યાલયની સ્થાપના વડાવલી જૂથ કેળવણી મંડળ 
-                દ્વારા કરવામાં આવી હતી. તેમના સ્વપ્ન હતું કે ગ્રામીણ વિસ્તારના બાળકોને 
+                દ્વારા કરવામાં આવી હતી. તેમનું સ્વપ્ન હતું કે ગ્રામીણ વિસ્તારના બાળકોને 
                 પણ ઉચ્ચ ગુણવત્તાનું શિક્ષણ મળે.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                આજે, અમારી શાળામાં 2000 થી વધુ વિદ્યાર્થીઓ અભ્યાસ કરે છે અને 
-                50 થી વધુ અનુભવી શિક્ષકો તેમને માર્ગદર્શન આપે છે.
+                આજે, અમારી શાળામાં 300 થી વધુ વિદ્યાર્થીઓ અભ્યાસ કરે છે અને 
+                11 થી વધુ અનુભવી શિક્ષકો તેમને માર્ગદર્શન આપે છે.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                છેલ્લા 25 વર્ષોમાં, અમારા વિદ્યાર્થીઓએ બોર્ડ પરીક્ષાઓમાં ઉત્કૃષ્ટ 
+                છેલ્લા 65 વર્ષોમાં, અમારા વિદ્યાર્થીઓએ બોર્ડ પરીક્ષાઓમાં ઉત્કૃષ્ટ 
                 પરિણામો મેળવ્યા છે અને ઘણા વિદ્યાર્થીઓ આજે ડૉક્ટર, ઇજનેર, 
                 શિક્ષક અને સફળ વ્યાવસાયિક બન્યા છે.
               </p>
@@ -135,7 +135,7 @@ export default function About() {
             value: "500+",
             label: "મેરિટ વિદ્યાર્થીઓ"
           }, {
-            value: "50+",
+            value: "20+",
             label: "રાજ્ય પુરસ્કારો"
           }, {
             value: "100%",
