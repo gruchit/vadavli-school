@@ -18,13 +18,11 @@ const allModules = {
   ...modules3,
 };
 const galleryImages = Object.entries(allModules).map(([path, mod], index) => {
-  const fileName = path.split('/').pop().split('.')[0];
-
   return {
     id: index + 1,
-    src: mod.default,
-    // alt: fileName.replace(/-/g, ' '),
-    category: path.includes('65_years') ? '65_years' : 'gallery',
+    src: (mod as any).default,
+    alt: `Gallery image ${index + 1}`,
+    category: path.includes('65_years') ? '65_years' : path.includes('group_photos') ? 'group_photos' : 'gallery',
   };
 });
 
